@@ -1,0 +1,7 @@
+[package]
+name = "android_hello_world"
+version = "0.1.0"
+authors = ["Felix Obenhuber <felix@obenhuber.de>"]
+build = "build.rs"
+
+[dependencies]
