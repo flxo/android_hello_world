@@ -1,7 +1,8 @@
 [package]
-name = "android_hello_world"
-version = "0.1.0"
 authors = ["Felix Obenhuber <felix@obenhuber.de>"]
 build = "build.rs"
-
+name = "android_hello_world"
+version = "0.1.0"
 [dependencies]
+android_logger = "0.3.0"
+log = "0.3.8"

@@ -1,4 +1,40 @@
 [[package]]
-name = "android_build"
+name = "android_hello_world"
 version = "0.1.0"
+dependencies = [
+ "android_logger 0.3.0 (registry+https://github.com/rust-lang/crates.io-index)",
+ "log 0.3.8 (registry+https://github.com/rust-lang/crates.io-index)",
+]
 
+[[package]]
+name = "android_log-sys"
+version = "0.1.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+dependencies = [
+ "libc 0.2.33 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[[package]]
+name = "android_logger"
+version = "0.3.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+dependencies = [
+ "android_log-sys 0.1.1 (registry+https://github.com/rust-lang/crates.io-index)",
+ "log 0.3.8 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[[package]]
+name = "libc"
+version = "0.2.33"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+
+[[package]]
+name = "log"
+version = "0.3.8"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+
+[metadata]
+"checksum android_log-sys 0.1.1 (registry+https://github.com/rust-lang/crates.io-index)" = "1b9f183ca2315ac55e98c40c1bf095cb36a67fbc3e551e61e31c06b6938d6107"
+"checksum android_logger 0.3.0 (registry+https://github.com/rust-lang/crates.io-index)" = "1e2b70c2b322d7b980c5324e0010253eb19314510ebd66ddf78bd6efdcf5fc20"
+"checksum libc 0.2.33 (registry+https://github.com/rust-lang/crates.io-index)" = "5ba3df4dcb460b9dfbd070d41c94c19209620c191b0340b929ce748a2bcd42d2"
+"checksum log 0.3.8 (registry+https://github.com/rust-lang/crates.io-index)" = "880f77541efa6e5cc74e76910c9884d9859683118839d6a1dc3b11e63512565b"
