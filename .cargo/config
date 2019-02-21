@@ -1,5 +1,8 @@
 [target.arm-linux-androideabi]
 linker = "arm-linux-androideabi-g++"
 
+[target.aarch64-linux-android]
+linker = "aarch64-linux-android-clang++"
+
 [build]
 target = "arm-linux-androideabi"
